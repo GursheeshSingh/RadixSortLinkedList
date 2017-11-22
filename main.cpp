@@ -27,9 +27,17 @@ void transversal();
 Node *Node::root = nullptr;
 
 int main() {
-    insert(50);
-    insert(152);
-    insert(27);
+    int n;
+
+    cout << "Enter Number of Elements: ";
+    cin >> n;
+
+    for (int i = 0; i < n; ++i) {
+        int value;
+        cin >> value;
+        insert(value);
+    }
+
     radixSort();
 }
 
